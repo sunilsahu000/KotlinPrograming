@@ -1,74 +1,33 @@
-fun main(args: Array<String>) {
+fun main(args:Array<String>){
+    //for loop in kotlin
+  /*  in java will use for loop like
+    Intilizer -> ConditionCheck -> Code Excutetion -> Increament
+    for(int i =1;i<=10;i++){
+    //will write our loping logic here
+    but in kotlin will use ranges to use for loop
+    }*/
 
-    var number: Int = 21
-    when (number) {
-        1 -> println("the Nummber is 1")
-        2 -> println("the Number is 2")
-        3 -> println("the umber is 3")
-        20 -> println("The Number is 20")
-        else -> println("It is like Default in Jva " + number)
-    }
-
-    var a = 7;
-    when (a) {
-        1 -> {
-            //writing the multiple codes of lines
-            println("The number is " + 1)
-            println("The number is1 " + 1)
-            println("The number is 2" + 1)
-        }
-        2 -> {
-            println("The number is " + 1)
-            println("The number is1 " + 1)
-            println("The number is 2" + 1)
-        }
-        3 -> {
-            println("The number is " + 1)
-            println("The number is1 " + 1)
-            println("The number is 2" + 1)
-        }
-        0, 7, 9 -> {
-            println("The number is " + a)
-            println("The number is1 " + a)
-            println("The number is 2" + a)
-        }
-        else -> {
-            //here we can make default value with multiple lines
-        }
-    }
-
-    var a1 :Char = 's'
-    when(a1){
-        'a','e','i','o','u' -> println("VOWELS ")
-        else -> println("CONSTONETS ")
+    for(i in 1..20){
+        if(i % 2 == 0)
+            println("Even number is "+i)
 
     }
 
+    //While loop
 
+    var i:Int =1
+    while (i <= 5){
+        println("i value is "+i)
 
-    var rangeValues = 1..20
-    if(5 in 1..20){
-        println("Rangevalues containes the 5 value")
+        i++
+
     }
 
+    //Do while loopv
+    var  v :Int =2
+    do{
 
-    var z = 123;
-    when(z){
-        1,0,2,3,5,120 -> println("The value is 0,1,2,3,5,120")
-        !in 120..130 -> println("The value is 120 and 130 betwenn range")
-        else -> println("The value is ")
-    }
-
-    //WHEN as Expression
-
-    var x1 = 1;
-    var str:String =
-    when(x1){
-        0,2,3 -> "The values 0,2,3"
-        1 -> "The value is 1"
-        else -> "The is not value for X"
-    }
-    println(str)
-
-
+        println("THe Do while loop "+v)
+        v++
+    }while (v<=5)
 }
